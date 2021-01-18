@@ -13,10 +13,10 @@ const App = () => {
 
 
   return (
-    <AppContext.Provider value={'hello, world'}>
+    <AppContext.Provider value={{state, dispatch}}>
       <div className="container-fluid">
-        <EventForm state={state} dispatch={dispatch}/>      
-        <Events state={state} dispatch={dispatch}/>      
+        <EventForm/>      
+        <Events/>      
       </div>
     </AppContext.Provider>
   )
